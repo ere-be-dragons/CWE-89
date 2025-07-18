@@ -1,0 +1,13 @@
+{{#if flash.success}}
+<div class="notice" style="border: darkgreen 1pt solid;">
+  {{#each flash.success}}
+  {{ this }}<br />
+  {{/each}}
+</div>
+{{/if}}
+
+<h2>Welcome</h2>
+
+<p><strong>Congratulations {{ user.name }}</strong>, you managed to break in!</p>
+
+<p>Proof code: <pre>{{ proof }}</pre></p>
